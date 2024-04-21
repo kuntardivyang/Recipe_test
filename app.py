@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import google.generativeai as genai
 
 model = genai.GenerativeModel('gemini-pro')
-my_api_key_gemini = "AIzaSyCq_OGAAUMPhf2Fc4UNBGvPqRHRZrP33JE"
+my_api_key_gemini = "AIzaSyD1GOinR2fNdbFLRk78XcCS2jddQzRP0BQ"
 genai.configure(api_key=my_api_key_gemini)
 
 app = Flask(__name__)

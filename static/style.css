@@ -5,13 +5,15 @@
     font-family: 'Rubik', sans-serif;
 }
 
+
 .navbar{
     padding: 16px 0px 12px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: stretch;
-    background: #ffffff21;
+    background-color: #0e1629;
+    background: #dadada;
     width: 100%;
     transition: .3s linear;
     z-index: 999;
@@ -24,19 +26,25 @@
 }
 
 .body{
-    background: #0e1629;
+    background: rgb(185, 35, 35);
+
     padding: 100px;
     text-align: center;
     display: flex;
     align-items: center;
+
     justify-content: center;
     flex-direction: column;
 }
+.body:hover{
+
+}
 
 .body span{
-    background: #fff;
+    background: rgb(185, 35, 35);
     padding: 5px;
     font-size: 41px;
+    color: aliceblue;
 }
 
 .body h1{
@@ -68,6 +76,14 @@
 .discover{
     text-align: center;
     padding: 30px;
+    background-color: rgb(185, 35, 35);
+    color: aliceblue;
+   
+}
+.discover span{
+    justify-content: center;
+    word-wrap: break-word;
+    flex-wrap: wrap;
 }
 
 .discover img{
@@ -186,3 +202,18 @@
     text-align: center;
     padding: 30px;
 }
+
+.navbar-nav .nav-link {
+    padding: 10px 20px; /* Adjust the padding to increase or decrease the space around the items */
+    font-size: 18px; /* Adjust the font size as desired */
+    color: white;
+    
+}
+
+
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc; /* Change text color on hover */
+  }
+
+

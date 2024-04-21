@@ -20,17 +20,17 @@
 
 <body>
   <div class="header sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">AI RECIPES</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link " aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About Us</a>
@@ -41,20 +41,17 @@
             <li class="nav-item">
               <a class="nav-link" href="#menu">Menu</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#subscribe">Subscribe</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Enter your favourite food" aria-label="Search">
-            <button class="btn btn-outline-danger" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
-
   </div>
+
+
+
   <div class="body">
     <span>Welcome To</span>
     <h1>AI recipe generator</h1>
@@ -92,7 +89,8 @@
 
       <label for="extra-details">Extra Details:</label>
       <div>
-        <textarea id="extra-details" rows="4" cols="30" name="extraDetails" placeholder="Enter any additional details..."></textarea>
+        <textarea id="extra-details" rows="4" cols="30" name="extraDetails"
+          placeholder="Enter any additional details..."></textarea>
 
       </div>
 
@@ -117,21 +115,21 @@
   <div class="discover" id="about">
     <h2>About <span class="text-danger">Our </span> Services</h2>
     <pre> <span class="text-warning">Personalized Recipe Recommendations:</span>
-          Utilize AI algorithms to analyze user preferences and suggest personalized recipe recommendations based on their dietary restrictions, taste preferences, and ingredient availability.
+          Utilize AI algorithms to analyze user preferences and suggest personalized recipe recommendations based on their dietary restrictions.
           <span class="text-warning">Ingredient Analysis and Substitution:</span>
-          Offer a feature that allows users to input the ingredients they have on hand, and the AI will suggest alternative ingredients or recipe variations to accommodate dietary restrictions or preferences.
+          Offer a feature that allows users to input the ingredients they have on hand, and the AI will suggest alternative ingredients.
           <span class="text-warning">Meal Planning Assistance:</span>
-          Provide AI-powered meal planning tools that help users create balanced and nutritious meal plans tailored to their specific dietary needs, health goals, and lifestyle preferences.
+          Provide AI-powered meal planning tools that help users create balanced and nutritious meal plans tailored .
           <span class="text-warning">Nutritional Information and Health Insights:</span>
-          Integrate AI to provide detailed nutritional information for recipes, including calorie counts, macronutrient breakdowns, and allergen alerts. Additionally, offer insights and tips for maintaining a healthy diet based on user data and preferences.
+          Integrate AI to provide detailed nutritional information for recipes, including calorie counts, macronutrient breakdowns, and allergen alerts.
           <span class="text-warning"> Smart Shopping Lists:</span>
-          Enable users to generate shopping lists automatically based on selected recipes, ingredient preferences, and inventory tracking. The AI can optimize the shopping list for efficiency and minimize food waste.
+          Enable users to generate shopping lists automatically based on selected recipes, ingredient preferences, and inventory tracking.
           <span class="text-warning">Cooking and Prep Time Optimization:</span>
           Use AI to analyze recipes and provide estimated cooking and prep times, as well as cooking techniques and tips to streamline the cooking process and achieve optimal results.
           <span class="text-warning">Community Engagement and Collaboration:</span>
-          Foster a community of food enthusiasts by allowing users to share their favorite recipes, rate and review recipes, and engage in discussions. The AI can facilitate recipe discovery and connect users with similar tastes and interests.
+          Foster a community of food enthusiasts by allowing users to share their favorite recipes, rate and review recipes, and engage in discussions.
           <span class="text-warning"> Continuous Improvement and Innovation:</span>
-          Commit to ongoing research and development to enhance the AI algorithms and expand the range of services offered. Solicit feedback from users to identify areas for improvement and prioritize new features and functionality.!</pre>
+          Commit to ongoing research and development to enhance the AI algorithms and expand the range of services offered. </pre>
     <img src="{{ url_for('static', filename='images/food.jpg') }}" alt="Food">
   </div>
   <div class="divider"></div>
@@ -139,42 +137,42 @@
     <h2>Discover Our <span class="text-danger">Top </span>RECIPES</h2>
     <div class="row card-dishes">
       <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"
-          href="food-delivery-category.html"><img class="card-img-top"
+          href="https://www.youtube.com/watch?v=4p83Ved7Lsk"><img class="card-img-top"
             src="{{ url_for('static', filename='images/paneer.jpg') }}" alt="Food Name">
           <div class="card-body py-4 text-center">
             <h3 class="h5 mt-1">PANNER MASALA</h3>
           </div>
         </a></div>
       <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"
-          href="food-delivery-category.html"><img class="card-img-top"
+          href="https://www.youtube.com/watch?v=qMAYG-soxhw"><img class="card-img-top"
             src="{{ url_for('static', filename='images/pav_bhaji.jpg') }}" alt="Food Name">
           <div class="card-body py-4 text-center">
             <h3 class="h5 mt-1">PAV BHAJI</h3>
           </div>
         </a></div>
       <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"
-          href="food-delivery-category.html"><img class="card-img-top"
+          href="https://www.youtube.com/watch?v=zSYmtXhs_oA"><img class="card-img-top"
             src="{{ url_for('static', filename='images/manchurian.jpg') }}" alt="Food Name">
           <div class="card-body py-4 text-center">
             <h3 class="h5 mt-1">MANCHURIAN</h3>
           </div>
         </a></div>
       <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"
-          href="food-delivery-category.html"><img class="card-img-top"
+          href="https://www.youtube.com/watch?v=ONrkIBvLqhY"><img class="card-img-top"
             src="{{ url_for('static', filename='images/khaman.jpg') }}" alt="Food Name">
           <div class="card-body py-4 text-center">
             <h3 class="h5 mt-1">GUJARATI SPECIAL</h3>
           </div>
         </a></div>
       <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"
-          href="food-delivery-category.html"><img class="card-img-top"
+          href="https://www.youtube.com/watch?v=u3vuq3zaR20"><img class="card-img-top"
             src="{{ url_for('static', filename='images/noodles.jpg') }}" alt="Food Name">
           <div class="card-body py-4 text-center">
             <h3 class="h5 mt-1">NOODLES</h3>
           </div>
         </a></div>
       <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow"
-          href="food-delivery-category.html"><img class="card-img-top"
+          href="https://www.youtube.com/watch?v=T1hzgTzoFhw"><img class="card-img-top"
             src="{{ url_for('static', filename='images/pasta.jpg') }}" alt="Food Name">
           <div class="card-body py-4 text-center">
             <h3 class="h5 mt-1">PASTA</h3>
@@ -208,5 +206,31 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
 </body>
+
+
+<script>
+
+window.addEventListener('scroll', function () {
+    const sections = document.querySelectorAll('section');
+    let scrollPosition = window.pageYOffset;
+
+    // Remove active class from all navbar links
+    document.querySelectorAll('.navbar-nav a').forEach(link => {
+      link.classList.remove('active');
+    });
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 50; // Adjust the offset if needed
+      const sectionHeight = section.clientHeight;
+      const sectionId = section.getAttribute('id');
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        // Add active class to the corresponding navbar link
+        document.querySelector('.navbar-nav a[href="#' + sectionId + '"]').classList.add('active');
+      }
+    });
+  });
+
+</script>
 
 </html>
