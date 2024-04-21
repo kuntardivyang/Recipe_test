@@ -20,11 +20,16 @@ def generate_recipe():
         cooking_time = request.form['cookingTime']
         complexity = request.form['complexity']
         recipe_type = request.form['recipeType']
-        extra_details = request.form['extraDetails']  # New field
+        extra_details = request.form['extraDetails']  
 
         prompt = f"""Generate a {meal_type} recipe with {ingredients} for {cuisine} cuisine. Cooking time should be {cooking_time} and complexity {complexity}.
         Recipe Type: {recipe_type}  # Include recipe type in prompt
         Extra Details: {extra_details}  # Include extra details in prompt
+        and also give me this data Calorie Data
+Nutrient Data,
+Protein,
+Fats,
+Carbohydrates,
         """
 
         response = model.generate_content(prompt)
